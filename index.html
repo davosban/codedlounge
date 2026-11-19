@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coded Art Atelier Events &amp; Lounge | events and lounge</title>
+  <link rel="icon" href="media/cropped-coded-logo-white-scaled-1-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Agbalumo&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="media/coded-logo-white-scaled.png" alt="Coded Art Atelier Events & Lounge Logo" class="logo-img">
+      </a>
+      <button class="burger-btn" id="burgerBtn" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV MODAL -->
+  <div class="nav-modal" id="navModal">
+    <div class="nav-modal-bg" id="navModalBg"></div>
+    <div class="nav-modal-content">
+      <button class="nav-modal-close" id="navModalClose" aria-label="Close Menu">&#10005;</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="events.html">Past Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO SLIDESHOW -->
+    <section class="hero-slideshow">
+      <div class="slides" id="slides">
+        <div class="slide active">
+          <img src="media/Image_fx-8.jpg" alt="Event slide 1">
+        </div>
+        <div class="slide">
+          <img src="media/Image_fx-9.jpg" alt="Event slide 2">
+        </div>
+        <div class="slide">
+          <img src="media/Image_fx-10.jpg" alt="Event slide 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- COMING THIS SUMMER -->
+    <section class="coming-soon-banner">
+      <p class="coming-soon-text">Coming This Summer</p>
+      <i class="fa-solid fa-arrow-down arrow-down"></i>
+    </section>
+
+    <!-- OVERVIEW + VIDEO -->
+    <section class="overview-section">
+      <div class="overview-cols container">
+        <div class="overview-img-col">
+          <img src="media/party-mobile-web.jpg" alt="Party" class="shadow-img">
+        </div>
+        <div class="overview-video-col">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/QKdJfzuSRuA" title="Event Video" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW TEXT + BUTTONS -->
+    <section class="overview-text-section container">
+      <h2 class="section-heading">Overview</h2>
+      <p>Our event is held primarily to celebrate fitness, wellness, sports and recreation. In addition, our chosen sport of the year is soccer which is a subsector of the broader arts, entertainment, and recreation industry; specifically highlighting the World Cup tournament.</p>
+      <p>This multi-weekend mansion and pool party event with after-party is also for a cause of encouraging recreation, sports, and fitness in a fun way. Furthermore, a percentage of the accumulated funds will go to our chosen children life crisis.</p>
+
+      <div class="overview-btns">
+        <button class="info-btn" data-modal="modal-purpose">Event Purpose</button>
+        <button class="info-btn" data-modal="modal-highlights">Event Highlights &amp; Benefits</button>
+        <button class="info-btn" data-modal="modal-cause">The Cause: Supporting Children in Crisis</button>
+      </div>
+
+      <div class="overview-donate-img">
+        <img src="media/donate-wcoded.jpg" alt="Donate">
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="packages-section">
+      <div class="container">
+        <div class="section-title-row">
+          <h2 class="section-heading">PACKAGES</h2>
+          <i class="fa-solid fa-thumbs-up gradient-icon"></i>
+        </div>
+        <div class="packages-grid">
+          <div class="package-card">
+            <div class="pkg-price">$60-$80</div>
+            <div class="pkg-label">EARLY BIRD</div>
+          </div>
+          <div class="package-card">
+            <div class="pkg-price">$100-$150</div>
+            <div class="pkg-label">REGULAR ENTRY</div>
+          </div>
+          <div class="package-card">
+            <div class="pkg-price">$200-$300</div>
+            <div class="pkg-label">ENTRY + SEAT</div>
+          </div>
+          <div class="package-card">
+            <div class="pkg-price">$300-$350</div>
+            <div class="pkg-label">ENTRY + SEAT + DRINK</div>
+          </div>
+          <div class="package-card">
+            <div class="pkg-price">$350-$400</div>
+            <div class="pkg-label">ENTRY + SEAT + DRINK + 1 PLATE OF FOOD</div>
+          </div>
+          <div class="package-card">
+            <div class="pkg-price">$450-$550</div>
+            <div class="pkg-label">SECTION + 1 Bottle</div>
+            <div class="pkg-admits">ADMITS 2</div>
+          </div>
+          <div class="package-card">
+            <div class="pkg-price">$550-$650</div>
+            <div class="pkg-label">SECTION + 1 bottle &amp; HOOKAH</div>
+            <div class="pkg-admits">ADMITS 2</div>
+          </div>
+          <div class="package-card">
+            <div class="pkg-price">$700-$850</div>
+            <div class="pkg-label">SECTION + 2 bottles + hookah</div>
+            <div class="pkg-admits">ADMITS 3</div>
+          </div>
+          <div class="package-card">
+            <div class="pkg-price">$850-$1000</div>
+            <div class="pkg-label">SECTION + 2 bottles, hookah &amp; 1 PLATE OF Food</div>
+            <div class="pkg-admits">ADMITS 3</div>
+          </div>
+          <div class="package-card">
+            <div class="pkg-price">$1500-$1800</div>
+            <div class="pkg-label">SECTION + 3 bottles, hookah &amp; 1 plate of Food</div>
+            <div class="pkg-admits">ADMITS 3</div>
+          </div>
+          <div class="package-card vip">
+            <i class="fa-solid fa-crown vip-crown"></i>
+            <div class="pkg-price">$1800-$2000</div>
+            <div class="pkg-label">SECTION + 3 bottles, hookah &amp; 1 plate of Food &amp; PRIVATE SERVICE</div>
+            <div class="pkg-admits">ADMITS 4 | SELECT 1 BOTTLE OF YOUR CHOICE</div>
+          </div>
+          <div class="package-card vip">
+            <i class="fa-solid fa-crown vip-crown"></i>
+            <div class="pkg-price">$2500-$3000</div>
+            <div class="pkg-label">SECTION + 4 bottles, hookah &amp; 1 plate of Food &amp; PRIVATE SERVICE</div>
+            <div class="pkg-admits">ADMITS 5 | SELECT 2 BOTTLE OF YOUR CHOICE</div>
+          </div>
+        </div>
+
+        <!-- EXTRAS -->
+        <div class="extras-block">
+          <p><strong>EXTRAS</strong></p>
+          <p>FOOD: $100-$200 &nbsp;|&nbsp; BOTTLE: $350</p>
+          <p>NON ALCHOHOLIC: $10-$20</p>
+          <p>CANS &amp; GLASS OF DRINK: $20-$60</p>
+          <p>VALET PARKING: $60-$100 (NO FREE PARKING)</p>
+          <p>SELF PARKING: $20-$40</p>
+          <p class="no-cash"><em>NO CASH PAYMENT ON SITE, ALL PAYMENTS ONLINE</em></p>
+        </div>
+
+        <div class="after-party-block packages-grid" style="margin-top:20px;">
+          <div class="package-card vip" style="max-width:200px; margin:0 auto;">
+            <div class="pkg-label"><strong>AFTER PARTY</strong></div>
+            <div class="pkg-price">$20 - $30</div>
+          </div>
+        </div>
+
+        <!-- BUY TICKETS -->
+        <div class="buy-tickets-row">
+          <p class="buy-tickets-label">Purchase Tickets &amp; Extras On</p>
+          <div class="ticket-platforms">
+            <button class="platform-btn" data-modal="modal-tickets">
+              <img src="media/eventbrite-logo.png" alt="Eventbrite">
+            </button>
+            <div class="vips-logo">
+              <img src="media/vipslogo-300x129.png" alt="VIPS Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFORMANCES & GUEST APPEARANCES -->
+    <section class="performances-section">
+      <div class="container">
+        <h2 class="section-heading">PERFORMANCES &amp; GUEST APPEARANCES</h2>
+        <div class="performers-grid">
+          <div class="performer-card">
+            <img src="media/shatta.png" alt="Shatta Wale">
+          </div>
+          <div class="performer-card">
+            <img src="media/kk.png" alt="Kofi Kinaata">
+          </div>
+          <div class="performer-card">
+            <img src="media/pat.png" alt="Patoranking">
+          </div>
+          <div class="performer-card">
+            <img src="media/nks.png" alt="Nikki Sammonas">
+          </div>
+          <div class="performer-card">
+            <img src="media/drg.png" alt="Drip Gawd">
+          </div>
+          <div class="performer-card">
+            <img src="media/candy.png" alt="Ogee the MC">
+          </div>
+          <div class="performer-card">
+            <img src="media/olu.png" alt="Olu Maintain">
+          </div>
+          <div class="performer-card">
+            <img src="media/flo.png" alt="PR Flow">
+          </div>
+        </div>
+        <p class="and-more">...and many more</p>
+      </div>
+    </section>
+
+    <!-- HOSTS -->
+    <section class="hosts-section">
+      <div class="container">
+        <h2 class="section-heading">HOSTS</h2>
+        <div class="hosts-grid">
+          <div class="host-card">
+            <img src="media/2.png" alt="Host">
+          </div>
+          <div class="host-card">
+            <img src="media/3.png" alt="Host">
+          </div>
+          <div class="host-card">
+            <img src="media/dana.png" alt="Host">
+          </div>
+          <div class="host-card">
+            <img src="media/host-dunn.png" alt="Host">
+          </div>
+        </div>
+        <p class="and-more">and others</p>
+      </div>
+    </section>
+
+    <!-- DJs -->
+    <section class="djs-section">
+      <div class="container">
+        <h2 class="section-heading">DJs</h2>
+        <div class="djs-grid">
+          <div class="dj-card">
+            <img src="media/dj-jelly.png" alt="DJ Jelly">
+          </div>
+          <div class="dj-card">
+            <img src="media/dj-kash.png" alt="DJ Kash">
+          </div>
+          <div class="dj-card">
+            <img src="media/dj-dunn.png" alt="DJ Dunn">
+          </div>
+          <div class="dj-card">
+            <img src="media/dj-hik.png" alt="DJ Hik">
+          </div>
+        </div>
+        <p class="and-more">and many more</p>
+      </div>
+    </section>
+
+    <!-- ALCOHOL CONSUMPTION CONTROL -->
+    <section class="alcohol-section white-bg">
+      <div class="container">
+        <h2 class="section-heading">Alcohol Consumption Control</h2>
+        <p class="centered-para">In the interest of health and wellness, our event has made it a top priority to monitor the served consumption and serve only high-quality refreshments and premium alcohol.</p>
+      </div>
+    </section>
+
+    <!-- ACKNOWLEDGMENT + EVENT DEDICATION -->
+    <section class="acknowledgment-section white-bg">
+      <div class="container two-cols">
+
+        <!-- Left: Acknowledgment -->
+        <div class="ack-col">
+          <h2 class="section-heading">Acknowledgment</h2>
+          <img src="media/the-mission.jpg" alt="The Mission" class="ack-img">
+          <p>At <strong>Coded Art Atelier &amp; Events</strong>, we believe that utilizing events to drive fundraising and humanitarian causes is both an honor and a vital part of building a lasting legacy.</p>
+          <p>However, the mission to protect and empower the next generation requires a collective effort. We are committed to ensuring that no child is left behind, whether that means combating stereotypes and discrimination, supporting those facing life crises, or providing the infrastructure necessary for growth.</p>
+          <button class="info-btn" data-modal="modal-readmore">Read More</button>
+        </div>
+
+        <!-- Right: Event Dedication -->
+        <div class="ack-col">
+          <h2 class="section-heading">Event Dedication</h2>
+          <img src="media/amoakohene.jpg" alt="Mr. Kwabena Amoakohene" class="dedication-img">
+          <div class="dedication-thumbs">
+            <button class="thumb-btn" data-modal="modal-mrkf">
+              <img src="media/mr-k-and-kf.jpg" alt="Mr K and KF">
+            </button>
+            <button class="thumb-btn" data-modal="modal-mrot">
+              <img src="media/mr-k-and-ot.jpg" alt="Mr K and OT">
+            </button>
+          </div>
+          <p>In loving memory of the late business mogul and entrepreneur, <strong>Mr. Kwabena Amoakohene</strong> (Holiday Inn Hotel). A distinguished humanitarian and champion of the needy, he was a passionate patron of the arts and sports. His legacy includes his dedicated service as a former Board Director of Kumasi Asante Kotoko S.C.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SPONSORS / PARTNERS -->
+    <section class="sponsors-section white-bg">
+      <div class="container">
+        <h2 class="section-heading">Sponsors/Partners</h2>
+        <div class="sponsors-grid">
+          <img src="media/shaxi.jpg" alt="Sponsor">
+          <img src="media/11.jpg" alt="Sponsor">
+          <img src="media/10.jpg" alt="Sponsor">
+          <img src="media/dj-dunn.jpeg" alt="Sponsor">
+          <img src="media/dunn.jpeg" alt="Sponsor">
+          <img src="media/6.jpg" alt="Sponsor">
+          <img src="media/5.jpg" alt="Sponsor">
+          <img src="media/4.jpg" alt="Sponsor">
+          <img src="media/3.jpg" alt="Sponsor">
+          <img src="media/logo-pkmi-VISUALS.png" alt="PKMI Visuals" class="dark-bg-logo">
+          <img src="media/8.jpg" alt="Sponsor">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="section-heading">Contact Us</h2>
+        <ul class="contact-list">
+          <li>
+            <i class="fa-brands fa-whatsapp contact-icon"></i>
+            <span>+2297981589</span>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp contact-icon"></i>
+            <span>+233 54 343 6069</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-envelope contact-icon"></i>
+            <span>codedatelier.events@gmail.com</span>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/codedloungeandevents/" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fa-brands fa-instagram contact-icon"></i>
+              <span>@codedloungeandevents</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-logo">
+      <img src="media/coded-logo-white-scaled.png" alt="Logo">
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Coded Art Atelier and Events</span>
+      <a href="https://davosban.com" target="_blank">Developed by Davosban</a>
+    </div>
+  </footer>
+
+  <!-- ======= MODALS ======= -->
+
+  <!-- Event Purpose Modal -->
+  <div class="modal-overlay" id="modal-purpose">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-purpose">&#10005;</button>
+      <h4><b>Event Purpose</b></h4>
+      <h5><i>Splashy Flashy Fun &amp; Fit Mansion And Pool Party With After-Party</i></h5>
+      <p>Welcome to the <b>Splashy Flashy Fun &amp; Fit Mansion And Pool Party With After-Party</b>, a premium multi-weekend event series designed to merge sports, fitness, recreation, and philanthropy. Our mission is to celebrate the importance of physical exercise and sports while raising vital funds to support children facing life crises; therefore we have merged exercise, sports, recreation and fundraiser together to achieve that goal.</p>
+      <p>This year, we are especially proud to acknowledge <b>Soccer</b> as our featured sport. As the <b>2026 World Cup</b> approaches, we aim to capture the spirit of the tournament; promoting togetherness, culture, showcase diversity and national unity. This event isn't just for athletes; it is a space for families, friends, and people of all nationalities to bond, build good relationships and encounters, while celebrating their heritage through the beautiful event.</p>
+    </div>
+  </div>
+
+  <!-- Event Highlights Modal -->
+  <div class="modal-overlay" id="modal-highlights">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-highlights">&#10005;</button>
+      <h4><b>Event Highlights &amp; Benefits</b></h4>
+      <p>Aiming to bridge the gap between nations and promote tourism while fostering unity across cultures. Our goal is to drive greater endeavors, progressive ventures, and successful professional connections.</p>
+      <p>By attending this multi-weekend affair, guests contribute to a vibrant atmosphere that promotes:</p>
+      <ul>
+        <li><b>Global Unity &amp; Tourism:</b> Bridging the gap between cultures and fostering progressive ventures among international businesses and colleagues.</li>
+        <li><b>Health &amp; Wellness:</b> Encouraging a healthy lifestyle through fun fitness, and the good tributes of exercise.</li>
+        <li><strong>Recreational Activities:</strong> Promoting and showcasing the importance of sports and recreational activities which is good for health.</li>
+        <li><b>Free Fitness Boot Camp</b> to promote health and wellness (every morning before the pool party.)</li>
+        <li><b>Diversity:</b> Promoting diversity and it's good attributes.</li>
+        <li><b>Heritage:</b> Showcasing the beauty of different nations and encouraging supporters to take pride in their culture.</li>
+        <li><b>Empowerment:</b> Providing a platform for community engagement and the empowerment of neglected kids through sports and the arts.</li>
+        <li><strong>Charity:</strong> Helping give aide to kids indeed under our chosen kid's life crisis.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The Cause Modal -->
+  <div class="modal-overlay" id="modal-cause">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-cause">&#10005;</button>
+      <h4><b>The Cause: Supporting Children in Crisis</b></h4>
+      <p>A significant percentage of the proceeds from this event will be donated to sports, arts, kid seminars, youth camps and other chosen kids causes.</p>
+      <h5><b>How Your Contribution Helps:</b></h5>
+      <p>Your support provides resources for youth camps, variety positive kids seminars, and structured athletic programs that offer:</p>
+      <ul>
+        <li><b>Emotional Support &amp; Healing:</b> Using kid seminars, art, sports and youth camps as outlets for self-expression, helping children process their feelings and build self-worth.</li>
+        <li><b>Holistic Development:</b> Your contribution goes to our chosen cause for children in crisis, kid seminars, youth camps, sports and art programs that will help vulnerable children stay on the right path.</li>
+        <li><b>Skill Building:</b> Helping young people discover valuable life skills through art and sports that extend far beyond traditional education.</li>
+        <li><b>Mentorship &amp; Leadership:</b> Encouraging healthy lifestyles and fostering the next generation of leaders.</li>
+      </ul>
+      <h5><b>Our Financial Commitment:</b></h5>
+      <ul>
+        <li><b>Sports Scholarships:</b> Funds will go toward kids' soccer teams and aspiring young athletes who lack the financial means to participate in professional or recreational sports.</li>
+        <li><b>After-School Programs:</b> Supporting healthy activities and art programs that keep children engaged and productive.</li>
+      </ul>
+      <p><strong>Our fundraiser for chosen kids life crisis, kid's seminars, youth camps, kids sports and art activities, will...</strong></p>
+      <ul>
+        <li>bring about a positive change in children's development and well-being.</li>
+        <li>give nurturing experiences and empathy.</li>
+        <li>align with promoting leadership, healthy lifestyle.</li>
+        <li>help provide resources and opportunities for kids/youth to thrive.</li>
+        <li>give young people access to art and sport activities which will have them in return use art and sports for social change.</li>
+        <li>help give good mentorship to kids.</li>
+        <li>build a positive self-image, self-worth, and self-love in children while building the inner strength they need to thrive.</li>
+        <li>use art as a tool for healing, thereby helping kids boost their confidence and truly understand their inherent value.</li>
+        <li>encourage kids to showcase good life skills outcome and help children achieve their goals.</li>
+        <li>motivate the good arts and sports ambition of the kids.</li>
+        <li>celebrate the uniqueness and potential of each child.</li>
+        <li>gives kids free vibrant self-expression and happy thoughts which is good for their health and overall progress.</li>
+        <li>promote a healthier environment which gives creative skills to kids.</li>
+        <li>promotes a stress-free mindset in children and stops them from being idle.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Tickets Modal -->
+  <div class="modal-overlay" id="modal-tickets">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-tickets">&#10005;</button>
+      <h3>Purchase Our Pool Party Tickets</h3>
+      <div class="ticket-table">
+        <div class="ticket-row">
+          <div class="ticket-loc">Maryland Party<br>(4 July)</div>
+          <a href="https://www.eventbrite.com/e/1985737388985" target="_blank" class="ticket-buy-btn">BUY TICKETS<br><small>On Eventbrite</small></a>
+        </div>
+        <div class="ticket-row">
+          <div class="ticket-loc">California Party<br>(11 July)</div>
+          <a href="https://www.eventbrite.com/e/1985736256598" target="_blank" class="ticket-buy-btn">BUY TICKETS<br><small>On Eventbrite</small></a>
+        </div>
+        <div class="ticket-row">
+          <div class="ticket-loc">Georgia Party<br>(18 July)</div>
+          <a href="https://www.eventbrite.com/e/1983194379776" target="_blank" class="ticket-buy-btn">BUY TICKETS<br><small>On Eventbrite</small></a>
+        </div>
+        <div class="ticket-row">
+          <div class="ticket-loc">New Jersey Party<br>(25 July)</div>
+          <a href="https://www.eventbrite.com/e/1985681724491" target="_blank" class="ticket-buy-btn">BUY TICKETS<br><small>On Eventbrite</small></a>
+        </div>
+      </div>
+      <h3 style="margin-top:1.5em;">Purchase Our Afterparty Tickets</h3>
+    </div>
+  </div>
+
+  <!-- Read More Acknowledgment Modal -->
+  <div class="modal-overlay" id="modal-readmore">
+    <div class="modal-box">
+      <button class="modal-close" data-close="modal-readmore">&#10005;</button>
+      <p>At <b>Coded Art Atelier &amp; Events</b>, we believe that utilizing events to drive fundraising and humanitarian causes is both an honor and a vital part of building a lasting legacy.</p>
+      <p>However, the mission to protect and empower the next generation requires a collective effort. We are committed to ensuring that no child is left behind, whether that means combating stereotypes and discrimination, supporting those facing life crises, or providing the infrastructure necessary for growth. From education to arts, to kids sports, youth camps, kids seminars and after-school programs, our goal is to ensure the well-being and upkeep of every child through orphanage infrastructures, free outlets, donations and free specialized facilities.</p>
+      <p>We recognize that we do not do this work alone. It is a blessing to see other ventures and individuals dedicated to the positive transformation of children's lives. We extend our deepest gratitude to ventures, endeavors and everyone established tackling these kids challenges and needs through sports, literacy, music, and recreation.</p>
+      <p>A special thank you and acknowledgment also goes to NGOs, foundations, orphanage owners, direct initiatives, companies, and private individuals who lead the way by donating funds, building sports and orphanage infrastructure, own and donate to food banks, host free youth camps and all other helpful channels that goes towards helping and solving the challenges and life crisis for children.</p>
+      <p><b>We honor the following initiatives and individuals for their outstanding contributions:</b></p>
+      <ul>
+        <li>UNICEF</li><li>Save the Children</li><li>Homeboy Industries</li><li>Darryl McDaniels</li><li>Oprah Winfrey</li><li>Angelina Jolie</li><li>Susan Hogan</li><li>Angelique Kidjo</li><li>Christian Atsu (In Memoriam)</li><li>Julius Tetteh Nartey</li><li>Omenaa Mensah</li><li>The Ogwumike Sisters</li><li>Anthony Joshua</li><li>Masai Ujiri</li><li>Sadio Mané</li><li>Wilfried Zaha</li><li>Didier Drogba</li><li>Kamaru Usman</li><li>Antonio Rüdiger</li><li>Nelson Mandela</li><li>Patrick Nnaemeka Okorie (Patoranking)</li><li>Christopher Brian Bridges (Ludacris)</li><li>Charity Blackwell</li><li>Rob Reiner</li><li>Jewel</li><li>Dolly Parton</li><li>J.K. Rowling</li><li>George Clooney</li><li>Alicia Keys</li><li>Nicki Minaj</li><li>Drake</li><li>Pharrell Williams</li><li>LeBron James</li><li>Shakira</li><li>Demi Moore &amp; Ashton Kutcher</li><li>Lady Gaga</li><li>Beyoncé</li><li>Alyson Stoner</li><li>Gina Rodriguez</li><li>..and many more not mentioned on here, you are doing similar great works. Thank You.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Mr K and KF photo modal -->
+  <div class="modal-overlay" id="modal-mrkf">
+    <div class="modal-box modal-img-box">
+      <button class="modal-close" data-close="modal-mrkf">&#10005;</button>
+      <img src="media/mr-k-and-kf.jpg" alt="Mr K and KF" style="width:100%;border-radius:8px;">
+    </div>
+  </div>
+
+  <!-- Mr K and OT photo modal -->
+  <div class="modal-overlay" id="modal-mrot">
+    <div class="modal-box modal-img-box">
+      <button class="modal-close" data-close="modal-mrot">&#10005;</button>
+      <img src="media/mr-k-and-ot.jpg" alt="Mr K and OT" style="width:100%;border-radius:8px;">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
